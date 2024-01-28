@@ -1,12 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-public class HitCounter
-{
-    private Queue<DateTime> hits;
-
-    public HitCounter()
+public void RecordHit()
     {
-        hits = new Queue<DateTime>();
+        hits.Enqueue(DateTime.Now);
     }
-}
